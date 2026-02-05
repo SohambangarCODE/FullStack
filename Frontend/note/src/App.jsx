@@ -57,8 +57,8 @@ function App() {
         {
           notes.map(note => {
             return <div className="note">
-              <h1>{note.title}</h1>
-              <p>{note.description}</p>
+              <h1>Title: {note.title}</h1>
+              <p>Description: {note.description}</p>
               <button onClick={()=>{handleDeleteNote(note._id)}} >Delete the note</button>
             </div>
           })
