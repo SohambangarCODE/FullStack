@@ -4,9 +4,6 @@ import axios from "axios";
 function App() {
   const [notes, setnotes] = useState([]);
 
-    console.log("hello Integration")
-
-
   function fetchNotes() {
     axios.get("http://localhost:3000/api/notes")
       .then(res => {
